@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="301.0" style="-fx-background-color: black; -fx-background-radius: 25; -fx-padding: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fahim.calculator.FXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <HBox layoutX="20.0" layoutY="377.0" prefHeight="55.0" prefWidth="261.0" spacing="5.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" style="-fx-background-radius: 0 0 0 25;" text="0" />
+            <Button fx:id="point" mnemonicParsing="false" onAction="#handlePointAction" prefHeight="55.0" prefWidth="64.0" text=".">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleEqualOperation" prefHeight="55.0" prefWidth="64.0" style="-fx-background-color: green;" text="=" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleOperation" prefHeight="55.0" prefWidth="64.0" style="-fx-background-color: orange; -fx-background-radius: 0 0 25 0;" text="+" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="310.0" prefHeight="55.0" prefWidth="261.0" spacing="5.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#handleOperation" prefHeight="55.0" prefWidth="64.0" style="-fx-background-color: orange;" text="-" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="242.0" prefHeight="55.0" prefWidth="261.0" spacing="5.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#handleOperation" prefHeight="55.0" prefWidth="64.0" style="-fx-background-color: orange;" text="/" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="174.0" prefHeight="55.0" prefWidth="261.0" spacing="5.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#handleDigitAction" prefHeight="55.0" prefWidth="64.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#handleOperation" prefHeight="55.0" prefWidth="64.0" style="-fx-background-color: orange;" text="*" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER_RIGHT" layoutX="20.0" layoutY="32.0" prefHeight="86.0" prefWidth="261.0">
+         <children>
+            <TextField fx:id="displayField" alignment="CENTER_RIGHT" prefHeight="64.0" prefWidth="253.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+         </children>
+      </VBox>
+      <RadioButton layoutX="260.0" layoutY="6.0" mnemonicParsing="false" onAction="#exitCalculator" prefHeight="17.0" prefWidth="0.0" />
+      <Button layoutX="228.0" layoutY="129.0" minWidth="45.0" mnemonicParsing="false" onAction="#handleClear" style="-fx-background-color: purple;" text="AC" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
